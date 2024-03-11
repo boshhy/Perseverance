@@ -1,5 +1,5 @@
 // Overview
-public class MaxProfitSolution
+public class Solution
 {
     public int MaxProfit(int[] prices)
     {
@@ -11,7 +11,7 @@ public class MaxProfitSolution
 }
 
 // Comments only
-public class MaxProfitSolution
+public class Solution
 {
     public int MaxProfit(int[] prices)
     {
@@ -33,7 +33,7 @@ public class MaxProfitSolution
 }
 
 // Pseudocode
-public class MaxProfitSolution
+public class Solution
 {
     public int MaxProfit(int[] prices)
     {

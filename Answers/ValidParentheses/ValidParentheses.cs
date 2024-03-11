@@ -1,7 +1,6 @@
-class IsValidSolution
+public class Solution
 {
-
-    static bool IsValid(string s)
+    public bool IsValid(string s)
     {
         // Create a dictionary to map closing brackets to their corresponding opening brackets.
         Dictionary<char, char> my_map = new Dictionary<char, char>{
@@ -35,49 +34,5 @@ class IsValidSolution
         }
         // Return true if the stack is empty, meaning all opening brackets have been matched.
         return stack.Count <= 0;
-    }
-
-
-
-
-
-
-
-    static void Main(string[] args)
-    {
-        // Test cases to verify the IsValid function
-
-        // Test case 1: Valid parentheses
-        string s1 = "()";
-        bool result1 = IsValid(s1);
-        Console.WriteLine("Test case 1:");
-        Console.WriteLine($"Input: s = \"{s1}\"");
-        Console.WriteLine($"Output: {result1}");
-        Console.WriteLine("Expected output: true");
-        Console.ForegroundColor = result1 == true ? ConsoleColor.Green : ConsoleColor.Red;
-        Console.WriteLine($"Test result: {(result1 == true ? "Passed" : "Failed")}");
-        Console.ResetColor();
-
-        // Test case 2: Valid parentheses
-        string s2 = "()[]{}";
-        bool result2 = IsValid(s2);
-        Console.WriteLine("\nTest case 2:");
-        Console.WriteLine($"Input: s = \"{s2}\"");
-        Console.WriteLine($"Output: {result2}");
-        Console.WriteLine("Expected output: true");
-        Console.ForegroundColor = result2 == true ? ConsoleColor.Green : ConsoleColor.Red;
-        Console.WriteLine($"Test result: {(result2 == true ? "Passed" : "Failed")}");
-        Console.ResetColor();
-
-        // Test case 3: Invalid parentheses
-        string s3 = "(]";
-        bool result3 = IsValid(s3);
-        Console.WriteLine("\nTest case 3:");
-        Console.WriteLine($"Input: s = \"{s3}\"");
-        Console.WriteLine($"Output: {result3}");
-        Console.WriteLine("Expected output: false");
-        Console.ForegroundColor = result3 == false ? ConsoleColor.Green : ConsoleColor.Red;
-        Console.WriteLine($"Test result: {(result3 == false ? "Passed" : "Failed")}");
-        Console.ResetColor();
     }
 }

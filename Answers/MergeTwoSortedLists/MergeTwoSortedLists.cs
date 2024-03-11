@@ -1,18 +1,18 @@
-public partial class MergeTwoListsSolution
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     public ListNode(int val=0, ListNode next=null) {
+ *         this.val = val;
+ *         this.next = next;
+ *     }
+ * }
+ */
+
+public class Solution
 {
-
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-    public static ListNode MergeTwoLists(ListNode list1, ListNode list2)
+    public ListNode MergeTwoLists(ListNode list1, ListNode list2)
     {
         // Initialize a temporary node to start the merged list
         ListNode tempNode = new ListNode();
