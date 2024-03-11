@@ -34,8 +34,14 @@ class IsValidSolution
             }
         }
         // Return true if the stack is empty, meaning all opening brackets have been matched.
-        return !(stack.Count > 0);
+        return stack.Count <= 0;
     }
+
+
+
+
+
+
 
     static void Main(string[] args)
     {
