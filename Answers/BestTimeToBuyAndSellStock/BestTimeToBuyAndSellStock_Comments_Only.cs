@@ -1,3 +1,4 @@
+// Comments only
 public class MaxProfitSolution
 {
     public int MaxProfit(int[] prices)
@@ -19,7 +20,7 @@ public class MaxProfitSolution
     }
 }
 
-// pseudocode
+// Pseudocode
 public class MaxProfitSolution
 {
     public int MaxProfit(int[] prices)
