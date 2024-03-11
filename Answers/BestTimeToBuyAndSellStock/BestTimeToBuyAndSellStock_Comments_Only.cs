@@ -19,15 +19,20 @@ public class MaxProfitSolution
     }
 }
 
+// pseudocode
+public class MaxProfitSolution
+{
+    public int MaxProfit(int[] prices)
+    {
+        // Initialize maxProfit to 0
+        // Initialize lowestPrice to infinity
 
+        // For each price in prices:
+        //     If price is less than lowestPrice:
+        //         Update lowestPrice to price
+        //     Else if price - lowestPrice is greater than maxProfit:
+        //         Update maxProfit to price - lowestPrice
 
-// Initialize maxProfit to 0
-// Initialize lowestPrice to infinity
-
-// For each price in prices:
-//     If price is less than lowestPrice:
-//         Update lowestPrice to price
-//     Else if price - lowestPrice is greater than maxProfit:
-//         Update maxProfit to price - lowestPrice
-
-// Return maxProfit
+        // Return maxProfit
+    }
+}
