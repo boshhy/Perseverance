@@ -1,3 +1,15 @@
+// Overview
+public class MaxProfitSolution
+{
+    public int MaxProfit(int[] prices)
+    {
+        // Initialize variables to track the maximum profit and the lowest price, 
+        // iterate through each price, update the lowest price if necessary, 
+        // and update the maximum profit if a better profit is found. Finally, 
+        // return the maximum profit obtained.
+    }
+}
+
 // Comments only
 public class MaxProfitSolution
 {
