@@ -5,7 +5,7 @@
 
 # Added by Boshhy
 *.csproj
-
+*.sln
 # User-specific files
 *.rsuser
 *.suo
