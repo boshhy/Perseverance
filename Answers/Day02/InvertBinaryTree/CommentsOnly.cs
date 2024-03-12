@@ -35,13 +35,13 @@ public class Solution
         // if root is null:
         //         return root
 
-        //     tempNode = root.left
-        //     root.left = root.right
-        //     root.right = tempNode
+        // tempNode = root.left
+        // root.left = root.right
+        // root.right = tempNode
 
-        //     InvertTree(root.left)
-        //     InvertTree(root.right)
+        // InvertTree(root.left)
+        // InvertTree(root.right)
 
-        //     return root
+        // return root
     }
 }
