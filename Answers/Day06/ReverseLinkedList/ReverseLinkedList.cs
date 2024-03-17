@@ -12,27 +12,26 @@
 
 public class Solution
 {
-    // Method to reverse a singly-linked list, taking the head node as input and returning the new head node.
+    // Method to reverse a linked list
     public ListNode ReverseList(ListNode head)
     {
-        // Initialize a pointer to keep track of the previous node, initially set to null.
-        ListNode prev = null;
-        // Initialize a pointer to keep track of the current node, initially set to null.                   
-        ListNode current = null;
+        // Initialize two pointers, 'left' and 'right', to null
+        ListNode left = null;
+        ListNode right = null;
 
-        // Iterate through the linked list until the current node becomes null.
+        // Iterate through the linked list
         while (head != null)
         {
-            // Set the current node to the head of the list.
-            current = head;
-            // Move the head to the next node, advancing the iteration.                 
-            head = head.next;
-            // Reverse the link of the current node to point to the previous node.              
-            current.next = prev;
-            // Move the previous pointer to the current node for the next iteration.                
-            prev = current;
+            // Store the next node of 'head' in 'right' to avoid losing the reference
+            right = head.next;
+            // Reverse the link of 'head' to point to the previous node 'left'
+            head.next = left;
+            // Move 'left' pointer to the current node 'head'
+            left = head;
+            // Move 'head' pointer to the next node in the original list
+            head = right;
         }
-        // Return the last node processed, which becomes the new head of the reversed list.
-        return current;
+        // 'left' now points to the last node of the original list, which is the first node of the reversed list
+        return left; // Return the new head of the reversed list
     }
 }
