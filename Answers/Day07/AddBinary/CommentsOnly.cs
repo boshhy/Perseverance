@@ -19,7 +19,8 @@ public class Solution
     {
         // Initialize an empty string to store the result.
 
-        // Initialize indices to traverse the input strings from right to left.
+        // Initialize two indices to traverse the input strings from right to left.
+        // Note: (aIndex and bIndex, both starting at end of length - 1 respectively)
 
         // Initialize variables to keep track of carry and sum.
 

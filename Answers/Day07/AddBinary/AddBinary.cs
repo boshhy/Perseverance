@@ -7,6 +7,7 @@ public class Solution
         string result = "";
 
         // Initialize indices to traverse the input strings from right to left.
+        // Note: (aIndex and bIndex, both starting at end of length - 1 respectively)
         int aIndex = a.Length - 1;
         int bIndex = b.Length - 1;
 
