@@ -59,11 +59,3 @@ public class Trie
         return true;
     }
 }
-
-/**
- * Your Trie object will be instantiated and called as such:
- * Trie obj = new Trie();
- * obj.Insert(word);
- * bool param_2 = obj.Search(word);
- * bool param_3 = obj.StartsWith(prefix);
- */
