@@ -34,7 +34,7 @@ public class Solution
 
         // Initialize variables to store the parsed integer value and the current numeric value.
         int total = 0;
-        int currentNumber;
+        int currentDigit;
 
         // Calculate the maximum value that can be represented by an integer divided by 10.
         int maxDiv10 = int.MaxValue / 10;
@@ -46,17 +46,17 @@ public class Solution
             if (char.IsNumber(character))
             {
                 // Convert the character to its corresponding numeric value.
-                currentNumber = character - '0';
+                currentDigit = character - '0';
 
                 // Check if adding the current digit would cause overflow.
-                if (total > maxDiv10 || (total == maxDiv10 && currentNumber >= 8))
+                if (total > maxDiv10 || (total == maxDiv10 && currentDigit >= 8))
                 {
                     // If overflow would occur, return the maximum or minimum integer value based on the sign.
                     return isPositive ? int.MaxValue : int.MinValue;
                 }
 
                 // Update the total by multiplying it by 10 and adding the current digit.
-                total = total * 10 + currentNumber;
+                total = total * 10 + currentDigit;
             }
             else
             {
