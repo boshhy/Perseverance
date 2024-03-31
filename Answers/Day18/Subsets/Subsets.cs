@@ -1,38 +1,35 @@
 public class Solution
 {
-    // Method to generate all subsets of an array of integers
+    // Method to find all subsets of an array of integers
     public IList<IList<int>> Subsets(int[] nums)
     {
-        // Initialize a list to store the subsets
+        // Initialize a list to store all subsets
         IList<IList<int>> result = new List<IList<int>>();
-
-        // Initialize a list to temporarily hold elements of subsets
+        // Initialize a list to store the current subset being constructed
         List<int> currentSubset = new List<int>();
-
-        // Start generating subsets recursively
+        // Start backtracking from the first element of the input array
         Backtrack(0);
-
-        // Return the generated subsets
+        // Return the list of subsets
         return result;
 
-        // Recursive method to generate subsets
-        void Backtrack(int start)
+        // Backtracking method to construct subsets
+        void Backtrack(int index)
         {
-            // Add the current subset to the result list
-            result.Add(new List<int>(currentSubset));
-
-            // Iterate through the remaining elements of the array
-            for (int i = start; i < nums.Length; i++)
+            // Base case: if the index is equal to or greater than the length of the input array,
+            // the current subset is complete, so add it to the result list
+            if (index >= nums.Length)
             {
-                // Add the current element to the subset
-                currentSubset.Add(nums[i]);
-
-                // Recursively generate subsets including the current element
-                Backtrack(i + 1);
-
-                // Backtrack: Remove the last element added to the subset
-                currentSubset.RemoveAt(currentSubset.Count - 1);
+                result.Add(new List<int>(currentSubset));
+                return;
             }
+            // Include the current element in the current subset
+            currentSubset.Add(nums[index]);
+            // Recursively call backtrack to include next element in the subset
+            Backtrack(index + 1);
+            // Remove the last added element to backtrack and explore other possibilities
+            currentSubset.RemoveAt(currentSubset.Count - 1);
+            // Continue exploring subsets without including the current element
+            Backtrack(index + 1);
         }
     }
 }

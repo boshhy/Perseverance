@@ -7,16 +7,17 @@ public class Solution
         Backtrack(0);
         return result;
 
-        void Backtrack(int start)
+        void Backtrack(int index)
         {
-            result.Add(new List<int>(currentSubset));
-
-            for (int i = start; i < nums.Length; i++)
+            if (index >= nums.Length)
             {
-                currentSubset.Add(nums[i]);
-                Backtrack(i + 1);
-                currentSubset.RemoveAt(currentSubset.Count - 1);
+                result.Add(new List<int>(currentSubset));
+                return;
             }
+            currentSubset.Add(nums[index]);
+            Backtrack(index + 1);
+            currentSubset.RemoveAt(currentSubset.Count - 1);
+            Backtrack(index + 1);
         }
     }
 }
