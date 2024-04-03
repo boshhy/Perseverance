@@ -37,7 +37,6 @@ public class Solution
                     Heapify(nodeToSwap);
                 }
             }
-
         }
 
         int[] Pop()
