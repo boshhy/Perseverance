@@ -1,5 +1,3 @@
-using System.Xml.XPath;
-
 public class Solution
 {
     public int Trap(int[] height)
