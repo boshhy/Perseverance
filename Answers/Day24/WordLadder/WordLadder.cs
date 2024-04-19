@@ -51,18 +51,12 @@ public class Solution
                             hashSet.Remove(wordToTry);
 
                         }
-
-
                     }
                     currentWordChars[i] = originalChar;
                 }
-
-
                 totalWordCount--;
             }
         }
-
-
         return 0;
     }
 }
