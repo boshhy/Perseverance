@@ -1,4 +1,4 @@
-class Solution
+public class Solution
 {
     class Job
     {
@@ -16,59 +16,57 @@ class Solution
 
     public int JobScheduling(int[] startTime, int[] endTime, int[] profit)
     {
-        int n = startTime.Length;
-
+        int numJobs = startTime.Length;
         List<Job> jobs = new List<Job>();
-        for (int i = 0; i < n; i++)
+
+        for (int i = 0; i < numJobs; i++)
         {
             jobs.Add(new Job(startTime[i], endTime[i], profit[i]));
         }
 
         jobs.Sort((a, b) => a.end - b.end);
 
-        int[] dp = new int[n];
-        dp[0] = jobs[0].profit;
+        int[] maxProfitSoFar = new int[numJobs];
+        maxProfitSoFar[0] = jobs[0].profit;
 
-        for (int i = 1; i < n; i++)
+        for (int index = 1; index < numJobs; index++)
         {
-            int currentProfit = jobs[i].profit;
-            int lastCompatibleJob = BinarySearch(jobs, i);
+            int currentProfit = jobs[index].profit;
+            int lastCompatibleJob = BinarySearch(jobs, index);
 
             if (lastCompatibleJob != -1)
             {
-                currentProfit += dp[lastCompatibleJob];
+                currentProfit += maxProfitSoFar[lastCompatibleJob];
             }
 
-            dp[i] = Math.Max(currentProfit, dp[i - 1]);
+            maxProfitSoFar[index] = Math.Max(currentProfit, maxProfitSoFar[index - 1]);
         }
 
-        return dp[n - 1];
-
-        int BinarySearch(List<Job> jobs, int index)
-        {
-            int low = 0, high = index - 1;
-            while (low <= high)
-            {
-                int mid = low + (high - low) / 2;
-
-                if (jobs[mid].end <= jobs[index].start)
-                {
-                    if (jobs[mid + 1].end <= jobs[index].start)
-                    {
-                        low = mid + 1;
-                    }
-                    else
-                    {
-                        return mid;
-                    }
-                }
-                else
-                {
-                    high = mid - 1;
-                }
-            }
-            return -1;
-        }
+        return maxProfitSoFar[numJobs - 1];
     }
 
+    int BinarySearch(List<Job> jobs, int index)
+    {
+        int left = 0;
+        int right = index - 1;
+
+        while (left <= right)
+        {
+            int mid = left + (right - left) / 2;
+
+            if (jobs[mid].end <= jobs[index].start)
+            {
+                if (jobs[mid + 1].end > jobs[index].start)
+                {
+                    return mid;
+                }
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
+        }
+        return -1;
+    }
 }
