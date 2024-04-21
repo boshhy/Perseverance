@@ -23,7 +23,7 @@ public class Solution
         // Recursively invert the left subtree
         // Recursively invert the right subtree
 
-        // Return the inverted root node
+        // Return the inverted root node 
     }
 }
 

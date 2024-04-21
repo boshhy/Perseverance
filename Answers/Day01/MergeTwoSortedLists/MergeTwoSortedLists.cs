@@ -38,7 +38,7 @@ public class Solution
         // Append remaining nodes from list1 or list2, if any
         currentNode.next = (list1 != null) ? list1 : list2;
 
-        // Return the merged list, excluding the temp node
+        // Return the merged list, excluding the temp node 
         return tempNode.next;
     }
 }

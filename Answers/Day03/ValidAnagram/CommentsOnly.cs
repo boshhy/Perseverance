@@ -3,7 +3,7 @@ public class Solution
 {
     public bool IsAnagram(string s, string t)
     {
-        // The code first checks if the lengths of the input strings are equal; 
+        // The code first checks if the lengths of the input strings are equal;  
         // if not, it returns false as strings of different lengths cannot be anagrams. 
         // Then, it initializes an array to store the counts of each character's occurrence. 
         // It iterates through both strings, updating the character counts accordingly. 

@@ -18,7 +18,7 @@ public class Solution
     // Helper method to perform recursive flood fill
     public void PaintTheCanvas(int[][] image, int sr, int sc, int newColor, int srLength, int scLength, int baseColor)
     {
-        // Check if the current pixel is out of bounds
+        // Check if the current pixel is out of bounds 
         if (sr < 0 || sr >= srLength || sc < 0 || sc >= scLength)
             return;
 

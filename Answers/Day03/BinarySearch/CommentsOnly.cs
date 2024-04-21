@@ -6,7 +6,7 @@ public class Solution
         // It initializes pointers for the left and right ends of the array and a middle index. 
         // It repeatedly narrows the search range by adjusting these pointers 
         // based on whether the target is less than or greater than the value at the middle index. 
-        // If the target is found, the function returns the index of the target; 
+        // If the target is found, the function returns the index of the target;  
         // otherwise, it returns -1 if the target is not present in the array.
     }
 }

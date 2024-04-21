@@ -2,7 +2,7 @@ public class Solution
 {
     public bool IsAnagram(string s, string t)
     {
-        // If the lengths of the two strings are not equal, they cannot be anagrams
+        // If the lengths of the two strings are not equal, they cannot be anagrams 
         if (s.Length != t.Length)
         {
             return false;

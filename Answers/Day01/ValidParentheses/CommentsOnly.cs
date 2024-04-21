@@ -14,7 +14,7 @@ public class Solution
 {
     public bool IsValid(string s)
     {
-        // Create a dictionary to map closing brackets to their corresponding opening brackets.
+        // Create a dictionary to map closing brackets to their corresponding opening brackets. 
 
         // Create a set containing all opening brackets for quick lookup.
 

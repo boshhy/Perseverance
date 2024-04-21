@@ -2,7 +2,7 @@ public class Solution
 {
     public int Search(int[] nums, int target)
     {
-        // Calculate the initial middle index of the array
+        // Calculate the initial middle index of the array 
         int middle = nums.Length / 2;
 
         // Set the initial left pointer to the beginning of the array

@@ -7,7 +7,7 @@ public class Solution
         // It initializes two pointers at the beginning and end of the string, 
         // then iterates towards the center, checking if the characters at these positions 
         // are the same. If a mismatch is found, it returns false; otherwise, 
-        // it returns true if the entire string is checked without finding any mismatches.
+        // it returns true if the entire string is checked without finding any mismatches. 
     }
 }
 

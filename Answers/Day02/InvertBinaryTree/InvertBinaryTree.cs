@@ -20,7 +20,7 @@ public class Solution
         // Check if the root node is null (base case)
         if (root == null)
         {
-            // If root is null, return null
+            // If root is null, return null 
             return root;
         }
 

@@ -2,7 +2,7 @@ public class Solution
 {
     public bool IsPalindrome(string s)
     {
-        // Convert the input string to lowercase to ignore case differences
+        // Convert the input string to lowercase to ignore case differences 
         s = s.ToLower();
 
         // Initialize pointers for the leftmost and rightmost characters

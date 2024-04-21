@@ -16,6 +16,7 @@ public class Solution
                 maxProfit = dayPrice - curerntLowestPrice;
             }
         }
+
         return maxProfit;
     }
 }

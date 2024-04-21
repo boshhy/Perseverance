@@ -19,7 +19,9 @@ public class Solution
             else
             {
                 if (stack.Count <= 0 || stack.Pop() != my_map[starter])
+                {
                     return false;
+                }
             }
         }
         return stack.Count <= 0;

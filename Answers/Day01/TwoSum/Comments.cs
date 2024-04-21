@@ -15,7 +15,7 @@ public class Solution
 {
     public int[] TwoSum(int[] nums, int target)
     {
-        // This method takes an array of integers 'nums' and an integer 'target' as parameters
+        // This method takes an array of integers 'nums' and an integer 'target' as parameters 
         // and returns an array containing the indices of the two numbers whose sum equals the target.
 
         // Initialize a dictionary to store the numbers already visited along with their indices.

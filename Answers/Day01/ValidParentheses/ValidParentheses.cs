@@ -16,7 +16,7 @@ public class Solution
         // Iterate through each character in the input string.
         foreach (char starter in s)
         {
-            // Check if the character is an opening bracket.
+            // Check if the character is an opening bracket. 
             if (opening.Contains(starter))
             {
                 // If it is, push it onto the stack.

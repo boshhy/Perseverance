@@ -11,7 +11,7 @@ public class Solution
         // Declare a variable to store the difference between the target and the current number.
         int difference;
 
-        // Loop through each number in the array 'nums'.
+        // Loop through each number in the array 'nums'. 
         for (int i = 0; i < nums.Length; i++)
         {
             // Calculate the difference needed to reach the target from the current number.
