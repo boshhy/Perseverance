@@ -3,8 +3,17 @@
 
 ## Day 1:
 - [**Two Sum**]( https://leetcode.com/problems/two-sum/description/ ) (Easy) (15 Minutes) (array)
+  - [Solution](https://github.com/boshhy/Perseverance/blob/main/Answers/Day01/TwoSum/TwoSum.cs)
+  - [Code Only](https://github.com/boshhy/Perseverance/blob/main/Answers/Day01/TwoSum/CodeOnly.cs)
+  - [Comments Only](https://github.com/boshhy/Perseverance/blob/main/Answers/Day01/TwoSum/Comments.cs)
 - [**Valid Parentheses**]( https://leetcode.com/problems/valid-parentheses/description/ ) (Easy) (20 Minutes) (stack)
+  - [Solution](link)
+  - [Code Only](link)
+  - [Comments Only](link)
 - [**Merge Two Sorted Lists**]( https://leetcode.com/problems/merge-two-sorted-lists/description/ ) (Easy) (20 Minutes) (Linked List)
+  - [Solution](link)
+  - [Code Only](link)
+  - [Comments Only](link)
 
 ## Day 2:
 - [**Best Time to Buy and Sell Stock**]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/ ) (Easy) (20 Minutes) (array)
